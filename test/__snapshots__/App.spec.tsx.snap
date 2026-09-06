@@ -1,0 +1,921 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    {
+      "backgroundColor": "#07111F",
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      {
+        "testUri": "../../../../src/assets/background.png",
+      }
+    }
+    style={
+      [
+        undefined,
+        {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "backgroundColor": "rgba(4, 10, 20, 0.34)",
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "flex": 1,
+        "paddingHorizontal": 72,
+        "paddingVertical": 42,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 76,
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#FF7A00",
+              "borderRadius": 14,
+              "height": 48,
+              "justifyContent": "center",
+              "marginRight": 14,
+              "width": 48,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#FFFFFF",
+                "fontSize": 28,
+                "fontWeight": "900",
+              }
+            }
+          >
+            P
+          </Text>
+        </View>
+        <View>
+          <Text
+            style={
+              {
+                "color": "#FFFFFF",
+                "fontSize": 22,
+                "fontWeight": "800",
+                "letterSpacing": 3,
+              }
+            }
+          >
+            PREPROOM
+          </Text>
+          <Text
+            style={
+              {
+                "color": "rgba(255,255,255,0.58)",
+                "fontSize": 13,
+                "marginTop": 3,
+              }
+            }
+          >
+            Interview rehearsal, reimagined.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "rgba(255,255,255,0.08)",
+            "borderColor": "rgba(255,255,255,0.12)",
+            "borderRadius": 20,
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "paddingHorizontal": 18,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#55D68A",
+              "borderRadius": 4,
+              "height": 8,
+              "marginRight": 9,
+              "width": 8,
+            }
+          }
+        />
+        <Text
+          style={
+            {
+              "color": "rgba(255,255,255,0.78)",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 1.2,
+            }
+          }
+        >
+          PRIVATE BY DESIGN
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "minHeight": 390,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flex": 1.1,
+            "paddingRight": 35,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#FF8A1F",
+              "fontSize": 16,
+              "fontWeight": "800",
+              "letterSpacing": 2.5,
+              "marginBottom": 18,
+            }
+          }
+        >
+          YOUR INTERVIEW GYM
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#FFFFFF",
+              "fontSize": 64,
+              "fontWeight": "800",
+              "letterSpacing": -1.2,
+              "lineHeight": 70,
+            }
+          }
+        >
+          Practice before
+it matters.
+        </Text>
+        <Text
+          style={
+            {
+              "color": "rgba(255,255,255,0.72)",
+              "fontSize": 22,
+              "lineHeight": 32,
+              "marginTop": 22,
+              "maxWidth": 690,
+            }
+          }
+        >
+          Build confidence through focused rehearsal — without recording your face or voice.
+        </Text>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginTop": 30,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "minWidth": 90,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 19,
+                  "fontWeight": "800",
+                }
+              }
+            >
+              01
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "rgba(255,255,255,0.48)",
+                  "fontSize": 10,
+                  "fontWeight": "800",
+                  "letterSpacing": 1.4,
+                  "marginTop": 4,
+                }
+              }
+            >
+              GOAL
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "backgroundColor": "rgba(255,255,255,0.16)",
+                "height": 32,
+                "marginHorizontal": 18,
+                "width": 1,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "minWidth": 90,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 19,
+                  "fontWeight": "800",
+                }
+              }
+            >
+              02
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "rgba(255,255,255,0.48)",
+                  "fontSize": 10,
+                  "fontWeight": "800",
+                  "letterSpacing": 1.4,
+                  "marginTop": 4,
+                }
+              }
+            >
+              REHEARSE
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "backgroundColor": "rgba(255,255,255,0.16)",
+                "height": 32,
+                "marginHorizontal": 18,
+                "width": 1,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "minWidth": 90,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 19,
+                  "fontWeight": "800",
+                }
+              }
+            >
+              03
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "rgba(255,255,255,0.48)",
+                  "fontSize": 10,
+                  "fontWeight": "800",
+                  "letterSpacing": 1.4,
+                  "marginTop": 4,
+                }
+              }
+            >
+              IMPROVE
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "height": 360,
+            "justifyContent": "center",
+            "position": "relative",
+            "width": 430,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "borderColor": "rgba(255,122,0,0.24)",
+              "borderRadius": 165,
+              "borderWidth": 1,
+              "height": 330,
+              "position": "absolute",
+              "width": 330,
+            }
+          }
+        />
+        <View
+          style={
+            {
+              "borderColor": "rgba(255,255,255,0.10)",
+              "borderRadius": 125,
+              "borderWidth": 1,
+              "height": 250,
+              "position": "absolute",
+              "width": 250,
+            }
+          }
+        />
+        <Image
+          resizeMode="contain"
+          source={
+            {
+              "testUri": "../../../../src/assets/vega.png",
+            }
+          }
+          style={
+            {
+              "height": 190,
+              "width": 245,
+            }
+          }
+          testID="vega-logo"
+        />
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "rgba(5,15,27,0.82)",
+              "borderColor": "rgba(255,255,255,0.12)",
+              "borderRadius": 18,
+              "borderWidth": 1,
+              "bottom": 12,
+              "flexDirection": "row",
+              "paddingHorizontal": 16,
+              "paddingVertical": 9,
+              "position": "absolute",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "#55D68A",
+                "borderRadius": 4,
+                "height": 7,
+                "marginRight": 8,
+                "width": 7,
+              }
+            }
+          />
+          <Text
+            style={
+              {
+                "color": "rgba(255,255,255,0.82)",
+                "fontSize": 10,
+                "fontWeight": "800",
+                "letterSpacing": 1.1,
+              }
+            }
+          >
+            READY TO REHEARSE
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 48,
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontSize": 20,
+            "fontWeight": "700",
+          }
+        }
+      >
+        Choose your next move
+      </Text>
+      <Text
+        style={
+          {
+            "color": "rgba(255,255,255,0.42)",
+            "fontSize": 14,
+          }
+        }
+      >
+        Use your remote
+      </Text>
+    </View>
+    <View
+      collapsable={false}
+      destinations={[]}
+      style={
+        [
+          {
+            "minHeight": 1,
+            "minWidth": 1,
+          },
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 190,
+            "justifyContent": "space-between",
+          },
+          {
+            "display": "flex",
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="Home"
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hasTVPreferredFocus={true}
+        isPressable={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onLongPress={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onPressIn={[Function]}
+        onPressOut={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "borderRadius": 20,
+              "height": 160,
+              "overflow": "hidden",
+              "padding": 12,
+              "width": 160,
+            },
+            {
+              "backgroundColor": "#FF6200",
+              "opacity": 1,
+              "transform": [
+                {
+                  "scale": 1.1,
+                },
+              ],
+            },
+          ]
+        }
+        testID="tile-home"
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              {
+                "testUri": "../../../../src/assets/home.png",
+              }
+            }
+            style={
+              {
+                "height": 40,
+                "tintColor": "#FFFFFF",
+                "width": 40,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#FFFFFF",
+                "fontSize": 22,
+                "fontWeight": "bold",
+                "includeFontPadding": false,
+                "lineHeight": 26,
+                "textAlign": "center",
+              }
+            }
+          >
+            Home
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Get started"
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hasTVPreferredFocus={false}
+        isPressable={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onLongPress={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onPressIn={[Function]}
+        onPressOut={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "borderRadius": 20,
+              "height": 160,
+              "overflow": "hidden",
+              "padding": 12,
+              "width": 160,
+            },
+            {
+              "backgroundColor": "#0074B8",
+            },
+          ]
+        }
+        testID="tile-get-started"
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              {
+                "testUri": "../../../../src/assets/get-started.png",
+              }
+            }
+            style={
+              {
+                "height": 40,
+                "tintColor": "#FFFFFF",
+                "width": 40,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#FFFFFF",
+                "fontSize": 22,
+                "fontWeight": "bold",
+                "includeFontPadding": false,
+                "lineHeight": 26,
+                "textAlign": "center",
+              }
+            }
+          >
+            Get
+started
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Test and Debug"
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hasTVPreferredFocus={false}
+        isPressable={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onLongPress={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onPressIn={[Function]}
+        onPressOut={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "borderRadius": 20,
+              "height": 160,
+              "overflow": "hidden",
+              "padding": 12,
+              "width": 160,
+            },
+            {
+              "backgroundColor": "#0074B8",
+            },
+          ]
+        }
+        testID="tile-debug"
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              {
+                "testUri": "../../../../src/assets/debug.png",
+              }
+            }
+            style={
+              {
+                "height": 40,
+                "tintColor": "#FFFFFF",
+                "width": 40,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#FFFFFF",
+                "fontSize": 22,
+                "fontWeight": "bold",
+                "includeFontPadding": false,
+                "lineHeight": 26,
+                "textAlign": "center",
+              }
+            }
+          >
+            Test &
+Debug
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Learn more"
+        accessibilityRole="button"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hasTVPreferredFocus={false}
+        isPressable={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onLongPress={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onPressIn={[Function]}
+        onPressOut={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "borderRadius": 20,
+              "height": 160,
+              "overflow": "hidden",
+              "padding": 12,
+              "width": 160,
+            },
+            {
+              "backgroundColor": "#0074B8",
+            },
+          ]
+        }
+        testID="tile-learn-more"
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              {
+                "testUri": "../../../../src/assets/learn-more.png",
+              }
+            }
+            style={
+              {
+                "height": 40,
+                "tintColor": "#FFFFFF",
+                "width": 40,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#FFFFFF",
+                "fontSize": 22,
+                "fontWeight": "bold",
+                "includeFontPadding": false,
+                "lineHeight": 26,
+                "textAlign": "center",
+              }
+            }
+          >
+            Learn
+more
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
