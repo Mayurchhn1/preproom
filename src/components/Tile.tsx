@@ -10,10 +10,12 @@ import {
 
 export interface TileProps {
   label: string;
-  icon: ImageSourcePropType;
+  icon?: ImageSourcePropType;
+  iconText?: string;
   isFocused: boolean;
   onFocus: () => void;
   onBlur?: () => void;
+  onPress?: () => void;
   testID?: string;
   accessibilityLabel?: string;
   hasTVPreferredFocus?: boolean;
@@ -22,9 +24,11 @@ export interface TileProps {
 export const Tile = ({
   label,
   icon,
+  iconText,
   isFocused,
   onFocus,
   onBlur,
+  onPress,
   testID,
   accessibilityLabel,
   hasTVPreferredFocus,
@@ -34,17 +38,22 @@ export const Tile = ({
       style={[styles.tile, isFocused ? styles.focused : styles.default]}
       onFocus={onFocus}
       onBlur={onBlur}
+      onPress={onPress}
       testID={testID}
       accessibilityLabel={accessibilityLabel}
       accessibilityRole="button"
       hasTVPreferredFocus={hasTVPreferredFocus}>
       <View style={styles.topHalf}>
-        <Image
-          source={icon}
-          style={styles.icon}
-          resizeMode="contain"
-          accessible={false}
-        />
+        {icon ? (
+          <Image
+            source={icon}
+            style={styles.icon}
+            resizeMode="contain"
+            accessible={false}
+          />
+        ) : (
+          <Text style={styles.iconText}>{iconText}</Text>
+        )}
       </View>
       <View style={styles.bottomHalf}>
         <Text style={styles.label}>{label}</Text>
@@ -55,9 +64,9 @@ export const Tile = ({
 
 const styles = StyleSheet.create({
   tile: {
-    width: 160,
-    height: 160,
-    borderRadius: 20,
+    width: 140,
+    height: 140,
+    borderRadius: 16,
     overflow: 'hidden',
     padding: 12,
   },
@@ -80,13 +89,19 @@ const styles = StyleSheet.create({
     opacity: 1,
   },
   icon: {
-    width: 40,
-    height: 40,
+    width: 36,
+    height: 36,
     tintColor: '#FFFFFF',
+  },
+  iconText: {
+    color: '#FFFFFF',
+    fontSize: 34,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   label: {
     color: '#FFFFFF',
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
     lineHeight: 26,

@@ -9,13 +9,17 @@ import {
 import {TVFocusGuideView} from '@amazon-devices/react-native-kepler';
 import {Tile} from './components/Tile';
 import {tiles} from './data/tiles';
+import {rehearsalGoals} from './data/rehearsal/goals';
 
 export const App = () => {
   const [focusedTileId, setFocusedTileId] = useState<string>('home');
+  const [activeView, setActiveView] = useState<'home' | 'goal'>('home');
+  const [focusedGoalId, setFocusedGoalId] = useState<string>('clarity');
+  const [selectedGoalId, setSelectedGoalId] = useState<string | null>(null);
 
   const focusedTile = tiles.find((tile) => tile.id === focusedTileId);
 
-  const isHome = focusedTileId === 'home';
+  const isHome = activeView === 'home';
 
   return (
     <ImageBackground
@@ -52,14 +56,13 @@ export const App = () => {
             </Text>
 
             <Text style={styles.heroTitle}>
-              {isHome ? 'Practice before\nit matters.' : focusedTile?.label}
+              {isHome ? 'Practice before\nit matters.' : 'Set your goal.'}
             </Text>
 
             <Text style={styles.heroDescription}>
               {isHome
                 ? 'Build confidence through focused rehearsal — without recording your face or voice.'
-                : focusedTile?.description ||
-                  'Choose a rehearsal experience to continue.'}
+                : 'Choose what you want to improve in your next interview rehearsal.'}
             </Text>
 
             <View style={styles.heroMeta}>
@@ -104,24 +107,69 @@ export const App = () => {
 
         {/* Navigation */}
         <View style={styles.navigationHeader}>
-          <Text style={styles.navigationTitle}>Choose your next move</Text>
-          <Text style={styles.navigationHint}>Use your remote</Text>
+          <Text style={styles.navigationTitle}>
+            {isHome
+              ? 'Choose your next move'
+              : selectedGoalId
+                ? `Goal selected: ${
+                    rehearsalGoals.find((goal) => goal.id === selectedGoalId)?.label
+                  }`
+                : 'Choose your goal'}
+          </Text>
+
+          <Text style={styles.navigationHint}>
+            {isHome
+              ? 'Use your remote'
+              : selectedGoalId
+                ? 'Ready to rehearse'
+                : 'Use your remote'}
+          </Text>
         </View>
 
-        <TVFocusGuideView style={styles.tileRowContent}>
-          {tiles.map((tile) => (
-            <Tile
-              key={tile.id}
-              label={tile.label}
-              icon={tile.icon}
-              isFocused={focusedTileId === tile.id}
-              onFocus={() => setFocusedTileId(tile.id)}
-              onBlur={() => {}}
-              testID={`tile-${tile.id}`}
-              accessibilityLabel={tile.accessibilityLabel}
-              hasTVPreferredFocus={tile.id === 'home'}
-            />
-          ))}
+        <TVFocusGuideView
+          style={styles.tileRowContent}
+>
+          {isHome
+            ? tiles.map((tile) => (
+                <Tile
+                  key={tile.id}
+                  label={tile.label}
+                  icon={tile.icon}
+                  isFocused={focusedTileId === tile.id}
+                  onFocus={() => setFocusedTileId(tile.id)}
+                  onBlur={() => {}}
+                  onPress={() => {
+                    if (tile.id === 'get-started') {
+                      setActiveView('goal');
+                      setFocusedGoalId('clarity');
+                      setSelectedGoalId(null);
+                    }
+                  }}
+                  testID={`tile-${tile.id}`}
+                  accessibilityLabel={tile.accessibilityLabel}
+                  hasTVPreferredFocus={tile.id === 'home'}
+                />
+              ))
+            : rehearsalGoals.map((goal) => (
+                <Tile
+                  key={goal.id}
+                  label={goal.label}
+                  iconText={
+                    goal.id === 'clarity'
+                      ? '◉'
+                      : goal.id === 'confidence'
+                        ? '◆'
+                        : '≡'
+                  }
+                  isFocused={focusedGoalId === goal.id}
+                  onFocus={() => setFocusedGoalId(goal.id)}
+                  onBlur={() => {}}
+                  onPress={() => setSelectedGoalId(goal.id)}
+                  testID={`goal-${goal.id}`}
+                  accessibilityLabel={goal.description}
+                  hasTVPreferredFocus={goal.id === 'clarity'}
+                />
+              ))}
         </TVFocusGuideView>
       </View>
     </ImageBackground>
@@ -141,12 +189,12 @@ const styles = StyleSheet.create({
 
   content: {
     flex: 1,
-    paddingHorizontal: 72,
-    paddingVertical: 42,
+    paddingHorizontal: 32,
+    paddingVertical: 24,
   },
 
   topBar: {
-    height: 76,
+    height: 56,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -213,45 +261,45 @@ const styles = StyleSheet.create({
   },
 
   hero: {
-    flex: 1,
+    height: 245,
     flexDirection: 'row',
     alignItems: 'center',
-    minHeight: 390,
   },
 
   heroCopy: {
-    flex: 1.1,
-    paddingRight: 35,
+    width: 500,
+    flexShrink: 0,
+    paddingRight: 24,
   },
 
   eyebrow: {
     color: '#FF8A1F',
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: '800',
     letterSpacing: 2.5,
-    marginBottom: 18,
+    marginBottom: 10,
   },
 
   heroTitle: {
     color: '#FFFFFF',
-    fontSize: 64,
-    lineHeight: 70,
+    fontSize: 44,
+    lineHeight: 48,
     fontWeight: '800',
     letterSpacing: -1.2,
   },
 
   heroDescription: {
     color: 'rgba(255,255,255,0.72)',
-    fontSize: 22,
-    lineHeight: 32,
-    maxWidth: 690,
-    marginTop: 22,
+    fontSize: 17,
+    lineHeight: 24,
+    maxWidth: 480,
+    marginTop: 14,
   },
 
   heroMeta: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 30,
+    marginTop: 18,
   },
 
   metaItem: {
@@ -280,8 +328,8 @@ const styles = StyleSheet.create({
   },
 
   heroVisual: {
-    width: 430,
-    height: 360,
+    width: 280,
+    height: 230,
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
@@ -289,30 +337,30 @@ const styles = StyleSheet.create({
 
   orbitOuter: {
     position: 'absolute',
-    width: 330,
-    height: 330,
-    borderRadius: 165,
+    width: 220,
+    height: 220,
+    borderRadius: 110,
     borderWidth: 1,
     borderColor: 'rgba(255,122,0,0.24)',
   },
 
   orbitInner: {
     position: 'absolute',
-    width: 250,
-    height: 250,
-    borderRadius: 125,
+    width: 170,
+    height: 170,
+    borderRadius: 85,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.10)',
   },
 
   vegaLogo: {
-    width: 245,
-    height: 190,
+    width: 170,
+    height: 130,
   },
 
   aiBadge: {
     position: 'absolute',
-    bottom: 12,
+    bottom: 0,
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 16,
@@ -339,7 +387,7 @@ const styles = StyleSheet.create({
   },
 
   navigationHeader: {
-    height: 48,
+    height: 36,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -357,7 +405,7 @@ const styles = StyleSheet.create({
   },
 
   tileRowContent: {
-    height: 190,
+    height: 150,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',

@@ -39,8 +39,8 @@ exports[`App matches snapshot 1`] = `
     style={
       {
         "flex": 1,
-        "paddingHorizontal": 72,
-        "paddingVertical": 42,
+        "paddingHorizontal": 32,
+        "paddingVertical": 24,
       }
     }
   >
@@ -49,7 +49,7 @@ exports[`App matches snapshot 1`] = `
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "height": 76,
+          "height": 56,
           "justifyContent": "space-between",
         }
       }
@@ -156,17 +156,17 @@ exports[`App matches snapshot 1`] = `
       style={
         {
           "alignItems": "center",
-          "flex": 1,
           "flexDirection": "row",
-          "minHeight": 390,
+          "height": 245,
         }
       }
     >
       <View
         style={
           {
-            "flex": 1.1,
-            "paddingRight": 35,
+            "flexShrink": 0,
+            "paddingRight": 24,
+            "width": 500,
           }
         }
       >
@@ -174,10 +174,10 @@ exports[`App matches snapshot 1`] = `
           style={
             {
               "color": "#FF8A1F",
-              "fontSize": 16,
+              "fontSize": 13,
               "fontWeight": "800",
               "letterSpacing": 2.5,
-              "marginBottom": 18,
+              "marginBottom": 10,
             }
           }
         >
@@ -187,10 +187,10 @@ exports[`App matches snapshot 1`] = `
           style={
             {
               "color": "#FFFFFF",
-              "fontSize": 64,
+              "fontSize": 44,
               "fontWeight": "800",
               "letterSpacing": -1.2,
-              "lineHeight": 70,
+              "lineHeight": 48,
             }
           }
         >
@@ -201,10 +201,10 @@ it matters.
           style={
             {
               "color": "rgba(255,255,255,0.72)",
-              "fontSize": 22,
-              "lineHeight": 32,
-              "marginTop": 22,
-              "maxWidth": 690,
+              "fontSize": 17,
+              "lineHeight": 24,
+              "marginTop": 14,
+              "maxWidth": 480,
             }
           }
         >
@@ -215,7 +215,7 @@ it matters.
             {
               "alignItems": "center",
               "flexDirection": "row",
-              "marginTop": 30,
+              "marginTop": 18,
             }
           }
         >
@@ -341,10 +341,10 @@ it matters.
         style={
           {
             "alignItems": "center",
-            "height": 360,
+            "height": 230,
             "justifyContent": "center",
             "position": "relative",
-            "width": 430,
+            "width": 280,
           }
         }
       >
@@ -352,11 +352,11 @@ it matters.
           style={
             {
               "borderColor": "rgba(255,122,0,0.24)",
-              "borderRadius": 165,
+              "borderRadius": 110,
               "borderWidth": 1,
-              "height": 330,
+              "height": 220,
               "position": "absolute",
-              "width": 330,
+              "width": 220,
             }
           }
         />
@@ -364,11 +364,11 @@ it matters.
           style={
             {
               "borderColor": "rgba(255,255,255,0.10)",
-              "borderRadius": 125,
+              "borderRadius": 85,
               "borderWidth": 1,
-              "height": 250,
+              "height": 170,
               "position": "absolute",
-              "width": 250,
+              "width": 170,
             }
           }
         />
@@ -381,8 +381,8 @@ it matters.
           }
           style={
             {
-              "height": 190,
-              "width": 245,
+              "height": 130,
+              "width": 170,
             }
           }
           testID="vega-logo"
@@ -395,7 +395,7 @@ it matters.
               "borderColor": "rgba(255,255,255,0.12)",
               "borderRadius": 18,
               "borderWidth": 1,
-              "bottom": 12,
+              "bottom": 0,
               "flexDirection": "row",
               "paddingHorizontal": 16,
               "paddingVertical": 9,
@@ -434,7 +434,7 @@ it matters.
         {
           "alignItems": "center",
           "flexDirection": "row",
-          "height": 48,
+          "height": 36,
           "justifyContent": "space-between",
         }
       }
@@ -473,7 +473,7 @@ it matters.
           {
             "alignItems": "center",
             "flexDirection": "row",
-            "height": 190,
+            "height": 150,
             "justifyContent": "space-between",
           },
           {
@@ -506,7 +506,7 @@ it matters.
         collapsable={false}
         focusable={true}
         hasTVPreferredFocus={true}
-        isPressable={false}
+        isPressable={true}
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -524,11 +524,11 @@ it matters.
         style={
           [
             {
-              "borderRadius": 20,
-              "height": 160,
+              "borderRadius": 16,
+              "height": 140,
               "overflow": "hidden",
               "padding": 12,
-              "width": 160,
+              "width": 140,
             },
             {
               "backgroundColor": "#FF6200",
@@ -562,9 +562,9 @@ it matters.
             }
             style={
               {
-                "height": 40,
+                "height": 36,
                 "tintColor": "#FFFFFF",
-                "width": 40,
+                "width": 36,
               }
             }
           />
@@ -582,7 +582,7 @@ it matters.
             style={
               {
                 "color": "#FFFFFF",
-                "fontSize": 22,
+                "fontSize": 18,
                 "fontWeight": "bold",
                 "includeFontPadding": false,
                 "lineHeight": 26,
@@ -618,7 +618,7 @@ it matters.
         collapsable={false}
         focusable={true}
         hasTVPreferredFocus={false}
-        isPressable={false}
+        isPressable={true}
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -636,11 +636,11 @@ it matters.
         style={
           [
             {
-              "borderRadius": 20,
-              "height": 160,
+              "borderRadius": 16,
+              "height": 140,
               "overflow": "hidden",
               "padding": 12,
-              "width": 160,
+              "width": 140,
             },
             {
               "backgroundColor": "#0074B8",
@@ -668,9 +668,9 @@ it matters.
             }
             style={
               {
-                "height": 40,
+                "height": 36,
                 "tintColor": "#FFFFFF",
-                "width": 40,
+                "width": 36,
               }
             }
           />
@@ -688,7 +688,7 @@ it matters.
             style={
               {
                 "color": "#FFFFFF",
-                "fontSize": 22,
+                "fontSize": 18,
                 "fontWeight": "bold",
                 "includeFontPadding": false,
                 "lineHeight": 26,
@@ -725,7 +725,7 @@ started
         collapsable={false}
         focusable={true}
         hasTVPreferredFocus={false}
-        isPressable={false}
+        isPressable={true}
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -743,11 +743,11 @@ started
         style={
           [
             {
-              "borderRadius": 20,
-              "height": 160,
+              "borderRadius": 16,
+              "height": 140,
               "overflow": "hidden",
               "padding": 12,
-              "width": 160,
+              "width": 140,
             },
             {
               "backgroundColor": "#0074B8",
@@ -775,9 +775,9 @@ started
             }
             style={
               {
-                "height": 40,
+                "height": 36,
                 "tintColor": "#FFFFFF",
-                "width": 40,
+                "width": 36,
               }
             }
           />
@@ -795,7 +795,7 @@ started
             style={
               {
                 "color": "#FFFFFF",
-                "fontSize": 22,
+                "fontSize": 18,
                 "fontWeight": "bold",
                 "includeFontPadding": false,
                 "lineHeight": 26,
@@ -832,7 +832,7 @@ Debug
         collapsable={false}
         focusable={true}
         hasTVPreferredFocus={false}
-        isPressable={false}
+        isPressable={true}
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -850,11 +850,11 @@ Debug
         style={
           [
             {
-              "borderRadius": 20,
-              "height": 160,
+              "borderRadius": 16,
+              "height": 140,
               "overflow": "hidden",
               "padding": 12,
-              "width": 160,
+              "width": 140,
             },
             {
               "backgroundColor": "#0074B8",
@@ -882,9 +882,9 @@ Debug
             }
             style={
               {
-                "height": 40,
+                "height": 36,
                 "tintColor": "#FFFFFF",
-                "width": 40,
+                "width": 36,
               }
             }
           />
@@ -902,7 +902,7 @@ Debug
             style={
               {
                 "color": "#FFFFFF",
-                "fontSize": 22,
+                "fontSize": 18,
                 "fontWeight": "bold",
                 "includeFontPadding": false,
                 "lineHeight": 26,
